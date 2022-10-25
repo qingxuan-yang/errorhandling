@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  errorhandling:
+    image: errorhandling
+    build:
+      context: .
+      dockerfile: ErrorhandlingService/Dockerfile
+
+  mongodb:
+    image: ${DOCKER_REGISTRY-}/mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo/data/:/data/db/
+
+  

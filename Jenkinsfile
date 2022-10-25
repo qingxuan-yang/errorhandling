@@ -61,13 +61,13 @@ pipeline{
         }
         steps{
             echo 'Docker Compose Deployment'
-            sh "sg docker -c 'docker-compose -f ${DOCKER_COMPOSE_FILE} down --rmi all'"
+            sh "sg docker -c 'docker-compose -f ${params.DOCKER_COMPOSE_FILE} down --rmi all'"
             // sh "sg docker -c 'docker-compose -f ${DOCKER_COMPOSE_FILE} down'"
-            sh "sg docker -c 'docker-compose -f ${DOCKER_COMPOSE_FILE} rm --force'"
+            sh "sg docker -c 'docker-compose -f ${params.DOCKER_COMPOSE_FILE} rm --force'"
             script {
                 if (params.COMMAND == 'start'){
-                    sh "sg docker -c 'docker-compose -f ${DOCKER_COMPOSE_FILE} build --force-rm'"                
-                    sh "sg docker -c 'docker-compose -f ${DOCKER_COMPOSE_FILE} up -d --force-recreate'"
+                    sh "sg docker -c 'docker-compose -f ${params.DOCKER_COMPOSE_FILE} build --force-rm'"                
+                    sh "sg docker -c 'docker-compose -f ${params.DOCKER_COMPOSE_FILE} up -d --force-recreate'"
                 }
             }
         }

@@ -42,34 +42,15 @@ pipeline{
       gitLabConnection("${params.GITLAB_CONNECTION}")
     }
 
-    agent any
+    agent{
+        label "TacDynamics-acer-agent"
+    }
 
     stages {
       stage('Build ErrorHandlingService'){
-        agent{
-            label "TacDynamics-acer-agent" 
-        }
         steps{
             echo "start build ErrorhandlingService"
               sh "sg docker -c 'docker-compose -f docker-compose.yml build'"
-        }
-      }
-
-      stage('Docker Compose Deployment'){
-        agent{
-            label "TacDynamics-acer-agent-2" 
-        }
-        steps{
-            echo 'Docker Compose Deployment'
-            sh "sg docker -c 'docker-compose -f ${params.DOCKER_COMPOSE_FILE} down --rmi all'"
-            // sh "sg docker -c 'docker-compose -f ${DOCKER_COMPOSE_FILE} down'"
-            sh "sg docker -c 'docker-compose -f ${params.DOCKER_COMPOSE_FILE} rm --force'"
-            script {
-                if (params.COMMAND == 'start'){
-                    sh "sg docker -c 'docker-compose -f ${params.DOCKER_COMPOSE_FILE} build --force-rm'"                
-                    sh "sg docker -c 'docker-compose -f ${params.DOCKER_COMPOSE_FILE} up -d --force-recreate'"
-                }
-            }
         }
       }
 

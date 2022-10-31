@@ -17,23 +17,6 @@ pipeline{
             defaultValue: "dev",
             description:"error handling version"
         )
-
-        string(
-            name: "DEPLOYMENT_AGENT",
-            defaultValue: "TacDynamics-acer-agent",
-            description: "Deployment Agent"
-        )
-
-        string(
-            name: "COMMAND",
-            defaultValue: "start",
-            description: "Deployment Command"
-        )
-
-        string(
-        name: "DOCKER_COMPOSE_FILE",
-        defaultValue:"docker-compose.yml",
-        description:"Compose File Name"
     )
 
     }

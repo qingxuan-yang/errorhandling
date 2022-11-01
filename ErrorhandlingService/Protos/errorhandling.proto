@@ -25,11 +25,14 @@ message GetWarningReportResponse{
 }
 
 message PostWarningReportRequest{
-
+    int64 request_id = 1;
+    repeated WarningData warning_data = 2;
 }
 
 message PostWarningReportResponse{
-    
+    int64 request_id = 1;
+    bool success = 2;
+    string message = 3;
 }
 
 message WarningData{

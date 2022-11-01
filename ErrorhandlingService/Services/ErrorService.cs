@@ -10,11 +10,5 @@ namespace ErrorhandlingService.Services
             _logger = logger;
         }
 
-        public override Task<GetWarningReportResponse> Get(GetWarningReportRequest request, ServerCallContext context)
-        {
-            return Task.FromResult(){
-
-            }
-        }
     }
 }

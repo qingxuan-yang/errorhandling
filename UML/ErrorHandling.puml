@@ -1,0 +1,19 @@
+@startuml
+
+!include DatabaseCollectionHandler.puml
+!include ErrorHandlingService.puml
+!include Model.puml
+!include BackgroundService.puml
+
+DatatbaseHandler..|>IDatabaseHandler
+ErrorService..|>IErrorService
+
+
+IDatabaseHandler <-- ErrorService
+ErrorService <-- CallBackService
+IDatabaseHandler <-- PrometheusService
+PrometheusService <-- GrafanaService
+
+ErrorService - DataModel
+
+@enduml

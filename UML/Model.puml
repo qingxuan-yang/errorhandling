@@ -1,0 +1,13 @@
+package DataModel{
+    class WarningModel{
+        +int request_id {get; set;}
+        +timestamp start_time {get; set;}
+        +string mission_id {get; set;}
+        +string task_id {get; set;}
+        +string device_id {get; set;}
+        +string error_code {get; set;}
+        +string warning_content {get; set;}
+        +string firm_id {get; set;}
+        +string version {get; set;}
+    }
+}

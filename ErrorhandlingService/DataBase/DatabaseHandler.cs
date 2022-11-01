@@ -3,12 +3,12 @@ using MongoDB.Driver;
 
 namespace ErrorhandlingService.DataBase
 {
-    public class MongodbDatabase: IMongodbDatsbase
+    public class DatabaseHandler: IDatsbaseHandler
     {
         private readonly MongoDBSetting _dbsetting;
         private readonly MongoClientBase _mongoclient;
 
-        public MongodbDatabase(IOptions<MongoDBSetting> dbSetting, MongoClientBase mongoClient) 
+        public DatabaseHandler(IOptions<MongoDBSetting> dbSetting, MongoClientBase mongoClient) 
         {
             _dbsetting = dbSetting.Value;
             _mongoclient = mongoClient;

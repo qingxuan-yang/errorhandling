@@ -26,24 +26,26 @@ namespace ErrorhandlingService {
           string.Concat(
             "ChpQcm90b3MvZXJyb3JoYW5kbGluZy5wcm90bxIbZXJyb3JoYW5kbGluZ3Nl",
             "cnZpY2UucHJvdG9zGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3Rv",
-            "IrYBChdHZXRXYXJuaW5nUmVwb3J0UmVxdWVzdBISCgpyZXF1ZXN0X2lkGAEg",
-            "ASgDEi0KCXRpbWVzdGFtcBgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
-            "c3RhbXASEgoKbWlzc2lvbl9pZBgDIAEoCRIPCgd0YXNrX2lkGAQgASgJEhEK",
-            "CWRldmljZV9pZBgFIAEoCRIPCgdmaXJtX2lkGAYgASgJEg8KB3ZlcnNpb24Y",
-            "ByABKAkiwgEKGEdldFdhcm5pbmdSZXBvcnRSZXNwb25zZRISCgpyZXF1ZXN0",
-            "X2lkGAEgASgDEi0KCXRpbWVzdGFtcBgCIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5UaW1lc3RhbXASEgoKbWlzc2lvbl9pZBgDIAEoCRIPCgd0YXNrX2lkGAQg",
-            "ASgJEhEKCWRldmljZV9pZBgFIAEoCRISCgplcnJvcl9jb2RlGAYgASgFEhcK",
-            "D3dhcm5pbmdfY29udGVudBgHIAEoCTKDAQoNV2FybmluZ1JlcG9ydBJyCgNH",
-            "ZXQSNC5lcnJvcmhhbmRsaW5nc2VydmljZS5wcm90b3MuR2V0V2FybmluZ1Jl",
-            "cG9ydFJlcXVlc3QaNS5lcnJvcmhhbmRsaW5nc2VydmljZS5wcm90b3MuR2V0",
-            "V2FybmluZ1JlcG9ydFJlc3BvbnNlQheqAhRFcnJvcmhhbmRsaW5nU2Vydmlj",
-            "ZWIGcHJvdG8z"));
+            "IrcBChdHZXRXYXJuaW5nUmVwb3J0UmVxdWVzdBISCgpyZXF1ZXN0X2lkGAEg",
+            "ASgDEi4KCnN0YXJ0X3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
+            "ZXN0YW1wEhIKCm1pc3Npb25faWQYAyABKAkSDwoHdGFza19pZBgEIAEoCRIR",
+            "CglkZXZpY2VfaWQYBSABKAkSDwoHZmlybV9pZBgGIAEoCRIPCgd2ZXJzaW9u",
+            "GAcgASgJIm4KGEdldFdhcm5pbmdSZXBvcnRSZXNwb25zZRISCgpyZXF1ZXN0",
+            "X2lkGAEgASgDEj4KDHdhcm5pbmdfZGF0YRgCIAMoCzIoLmVycm9yaGFuZGxp",
+            "bmdzZXJ2aWNlLnByb3Rvcy5XYXJuaW5nRGF0YSKiAQoLV2FybmluZ0RhdGES",
+            "LgoKc3RhcnRfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASEgoKbWlzc2lvbl9pZBgCIAEoCRIPCgd0YXNrX2lkGAMgASgJEhEKCWRl",
+            "dmljZV9pZBgEIAEoCRISCgplcnJvcl9jb2RlGAUgASgFEhcKD3dhcm5pbmdf",
+            "Y29udGVudBgGIAEoCTKDAQoNV2FybmluZ1JlcG9ydBJyCgNHZXQSNC5lcnJv",
+            "cmhhbmRsaW5nc2VydmljZS5wcm90b3MuR2V0V2FybmluZ1JlcG9ydFJlcXVl",
+            "c3QaNS5lcnJvcmhhbmRsaW5nc2VydmljZS5wcm90b3MuR2V0V2FybmluZ1Jl",
+            "cG9ydFJlc3BvbnNlQheqAhRFcnJvcmhhbmRsaW5nU2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.GetWarningReportRequest), global::ErrorhandlingService.GetWarningReportRequest.Parser, new[]{ "RequestId", "Timestamp", "MissionId", "TaskId", "DeviceId", "FirmId", "Version" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.GetWarningReportResponse), global::ErrorhandlingService.GetWarningReportResponse.Parser, new[]{ "RequestId", "Timestamp", "MissionId", "TaskId", "DeviceId", "ErrorCode", "WarningContent" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.GetWarningReportRequest), global::ErrorhandlingService.GetWarningReportRequest.Parser, new[]{ "RequestId", "StartTime", "MissionId", "TaskId", "DeviceId", "FirmId", "Version" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.GetWarningReportResponse), global::ErrorhandlingService.GetWarningReportResponse.Parser, new[]{ "RequestId", "WarningData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.WarningData), global::ErrorhandlingService.WarningData.Parser, new[]{ "StartTime", "MissionId", "TaskId", "DeviceId", "ErrorCode", "WarningContent" }, null, null, null, null)
           }));
     }
     #endregion
@@ -80,7 +82,7 @@ namespace ErrorhandlingService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetWarningReportRequest(GetWarningReportRequest other) : this() {
       requestId_ = other.requestId_;
-      timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
+      startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
       missionId_ = other.missionId_;
       taskId_ = other.taskId_;
       deviceId_ = other.deviceId_;
@@ -105,14 +107,14 @@ namespace ErrorhandlingService {
       }
     }
 
-    /// <summary>Field number for the "timestamp" field.</summary>
-    public const int TimestampFieldNumber = 2;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    /// <summary>Field number for the "start_time" field.</summary>
+    public const int StartTimeFieldNumber = 2;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
-      get { return timestamp_; }
+    public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
+      get { return startTime_; }
       set {
-        timestamp_ = value;
+        startTime_ = value;
       }
     }
 
@@ -185,7 +187,7 @@ namespace ErrorhandlingService {
         return true;
       }
       if (RequestId != other.RequestId) return false;
-      if (!object.Equals(Timestamp, other.Timestamp)) return false;
+      if (!object.Equals(StartTime, other.StartTime)) return false;
       if (MissionId != other.MissionId) return false;
       if (TaskId != other.TaskId) return false;
       if (DeviceId != other.DeviceId) return false;
@@ -198,7 +200,7 @@ namespace ErrorhandlingService {
     public override int GetHashCode() {
       int hash = 1;
       if (RequestId != 0L) hash ^= RequestId.GetHashCode();
-      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
+      if (startTime_ != null) hash ^= StartTime.GetHashCode();
       if (MissionId.Length != 0) hash ^= MissionId.GetHashCode();
       if (TaskId.Length != 0) hash ^= TaskId.GetHashCode();
       if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
@@ -224,9 +226,9 @@ namespace ErrorhandlingService {
         output.WriteRawTag(8);
         output.WriteInt64(RequestId);
       }
-      if (timestamp_ != null) {
+      if (startTime_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Timestamp);
+        output.WriteMessage(StartTime);
       }
       if (MissionId.Length != 0) {
         output.WriteRawTag(26);
@@ -261,9 +263,9 @@ namespace ErrorhandlingService {
         output.WriteRawTag(8);
         output.WriteInt64(RequestId);
       }
-      if (timestamp_ != null) {
+      if (startTime_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Timestamp);
+        output.WriteMessage(StartTime);
       }
       if (MissionId.Length != 0) {
         output.WriteRawTag(26);
@@ -297,8 +299,8 @@ namespace ErrorhandlingService {
       if (RequestId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(RequestId);
       }
-      if (timestamp_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
+      if (startTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartTime);
       }
       if (MissionId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(MissionId);
@@ -329,11 +331,11 @@ namespace ErrorhandlingService {
       if (other.RequestId != 0L) {
         RequestId = other.RequestId;
       }
-      if (other.timestamp_ != null) {
-        if (timestamp_ == null) {
-          Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+      if (other.startTime_ != null) {
+        if (startTime_ == null) {
+          StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
-        Timestamp.MergeFrom(other.Timestamp);
+        StartTime.MergeFrom(other.StartTime);
       }
       if (other.MissionId.Length != 0) {
         MissionId = other.MissionId;
@@ -369,10 +371,10 @@ namespace ErrorhandlingService {
             break;
           }
           case 18: {
-            if (timestamp_ == null) {
-              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            if (startTime_ == null) {
+              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
-            input.ReadMessage(Timestamp);
+            input.ReadMessage(StartTime);
             break;
           }
           case 26: {
@@ -414,10 +416,10 @@ namespace ErrorhandlingService {
             break;
           }
           case 18: {
-            if (timestamp_ == null) {
-              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            if (startTime_ == null) {
+              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
-            input.ReadMessage(Timestamp);
+            input.ReadMessage(StartTime);
             break;
           }
           case 26: {
@@ -477,12 +479,7 @@ namespace ErrorhandlingService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetWarningReportResponse(GetWarningReportResponse other) : this() {
       requestId_ = other.requestId_;
-      timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
-      missionId_ = other.missionId_;
-      taskId_ = other.taskId_;
-      deviceId_ = other.deviceId_;
-      errorCode_ = other.errorCode_;
-      warningContent_ = other.warningContent_;
+      warningData_ = other.warningData_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -502,70 +499,14 @@ namespace ErrorhandlingService {
       }
     }
 
-    /// <summary>Field number for the "timestamp" field.</summary>
-    public const int TimestampFieldNumber = 2;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    /// <summary>Field number for the "warning_data" field.</summary>
+    public const int WarningDataFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::ErrorhandlingService.WarningData> _repeated_warningData_codec
+        = pb::FieldCodec.ForMessage(18, global::ErrorhandlingService.WarningData.Parser);
+    private readonly pbc::RepeatedField<global::ErrorhandlingService.WarningData> warningData_ = new pbc::RepeatedField<global::ErrorhandlingService.WarningData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
-      get { return timestamp_; }
-      set {
-        timestamp_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mission_id" field.</summary>
-    public const int MissionIdFieldNumber = 3;
-    private string missionId_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string MissionId {
-      get { return missionId_; }
-      set {
-        missionId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "task_id" field.</summary>
-    public const int TaskIdFieldNumber = 4;
-    private string taskId_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string TaskId {
-      get { return taskId_; }
-      set {
-        taskId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "device_id" field.</summary>
-    public const int DeviceIdFieldNumber = 5;
-    private string deviceId_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string DeviceId {
-      get { return deviceId_; }
-      set {
-        deviceId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "error_code" field.</summary>
-    public const int ErrorCodeFieldNumber = 6;
-    private int errorCode_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ErrorCode {
-      get { return errorCode_; }
-      set {
-        errorCode_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "warning_content" field.</summary>
-    public const int WarningContentFieldNumber = 7;
-    private string warningContent_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string WarningContent {
-      get { return warningContent_; }
-      set {
-        warningContent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
+    public pbc::RepeatedField<global::ErrorhandlingService.WarningData> WarningData {
+      get { return warningData_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -582,7 +523,252 @@ namespace ErrorhandlingService {
         return true;
       }
       if (RequestId != other.RequestId) return false;
-      if (!object.Equals(Timestamp, other.Timestamp)) return false;
+      if(!warningData_.Equals(other.warningData_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RequestId != 0L) hash ^= RequestId.GetHashCode();
+      hash ^= warningData_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (RequestId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(RequestId);
+      }
+      warningData_.WriteTo(output, _repeated_warningData_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (RequestId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(RequestId);
+      }
+      warningData_.WriteTo(ref output, _repeated_warningData_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RequestId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RequestId);
+      }
+      size += warningData_.CalculateSize(_repeated_warningData_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetWarningReportResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RequestId != 0L) {
+        RequestId = other.RequestId;
+      }
+      warningData_.Add(other.warningData_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            RequestId = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            warningData_.AddEntriesFrom(input, _repeated_warningData_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            RequestId = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            warningData_.AddEntriesFrom(ref input, _repeated_warningData_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class WarningData : pb::IMessage<WarningData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<WarningData> _parser = new pb::MessageParser<WarningData>(() => new WarningData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<WarningData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ErrorhandlingService.ErrorhandlingReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public WarningData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public WarningData(WarningData other) : this() {
+      startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
+      missionId_ = other.missionId_;
+      taskId_ = other.taskId_;
+      deviceId_ = other.deviceId_;
+      errorCode_ = other.errorCode_;
+      warningContent_ = other.warningContent_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public WarningData Clone() {
+      return new WarningData(this);
+    }
+
+    /// <summary>Field number for the "start_time" field.</summary>
+    public const int StartTimeFieldNumber = 1;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
+      get { return startTime_; }
+      set {
+        startTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mission_id" field.</summary>
+    public const int MissionIdFieldNumber = 2;
+    private string missionId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MissionId {
+      get { return missionId_; }
+      set {
+        missionId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "task_id" field.</summary>
+    public const int TaskIdFieldNumber = 3;
+    private string taskId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TaskId {
+      get { return taskId_; }
+      set {
+        taskId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "device_id" field.</summary>
+    public const int DeviceIdFieldNumber = 4;
+    private string deviceId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DeviceId {
+      get { return deviceId_; }
+      set {
+        deviceId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "error_code" field.</summary>
+    public const int ErrorCodeFieldNumber = 5;
+    private int errorCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ErrorCode {
+      get { return errorCode_; }
+      set {
+        errorCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "warning_content" field.</summary>
+    public const int WarningContentFieldNumber = 6;
+    private string warningContent_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string WarningContent {
+      get { return warningContent_; }
+      set {
+        warningContent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as WarningData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(WarningData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(StartTime, other.StartTime)) return false;
       if (MissionId != other.MissionId) return false;
       if (TaskId != other.TaskId) return false;
       if (DeviceId != other.DeviceId) return false;
@@ -594,8 +780,7 @@ namespace ErrorhandlingService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (RequestId != 0L) hash ^= RequestId.GetHashCode();
-      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
+      if (startTime_ != null) hash ^= StartTime.GetHashCode();
       if (MissionId.Length != 0) hash ^= MissionId.GetHashCode();
       if (TaskId.Length != 0) hash ^= TaskId.GetHashCode();
       if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
@@ -617,32 +802,28 @@ namespace ErrorhandlingService {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (RequestId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(RequestId);
-      }
-      if (timestamp_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Timestamp);
+      if (startTime_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(StartTime);
       }
       if (MissionId.Length != 0) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(18);
         output.WriteString(MissionId);
       }
       if (TaskId.Length != 0) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(26);
         output.WriteString(TaskId);
       }
       if (DeviceId.Length != 0) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(34);
         output.WriteString(DeviceId);
       }
       if (ErrorCode != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(40);
         output.WriteInt32(ErrorCode);
       }
       if (WarningContent.Length != 0) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(50);
         output.WriteString(WarningContent);
       }
       if (_unknownFields != null) {
@@ -654,32 +835,28 @@ namespace ErrorhandlingService {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (RequestId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(RequestId);
-      }
-      if (timestamp_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Timestamp);
+      if (startTime_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(StartTime);
       }
       if (MissionId.Length != 0) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(18);
         output.WriteString(MissionId);
       }
       if (TaskId.Length != 0) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(26);
         output.WriteString(TaskId);
       }
       if (DeviceId.Length != 0) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(34);
         output.WriteString(DeviceId);
       }
       if (ErrorCode != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(40);
         output.WriteInt32(ErrorCode);
       }
       if (WarningContent.Length != 0) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(50);
         output.WriteString(WarningContent);
       }
       if (_unknownFields != null) {
@@ -691,11 +868,8 @@ namespace ErrorhandlingService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (RequestId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RequestId);
-      }
-      if (timestamp_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
+      if (startTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartTime);
       }
       if (MissionId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(MissionId);
@@ -719,18 +893,15 @@ namespace ErrorhandlingService {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GetWarningReportResponse other) {
+    public void MergeFrom(WarningData other) {
       if (other == null) {
         return;
       }
-      if (other.RequestId != 0L) {
-        RequestId = other.RequestId;
-      }
-      if (other.timestamp_ != null) {
-        if (timestamp_ == null) {
-          Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+      if (other.startTime_ != null) {
+        if (startTime_ == null) {
+          StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
-        Timestamp.MergeFrom(other.Timestamp);
+        StartTime.MergeFrom(other.StartTime);
       }
       if (other.MissionId.Length != 0) {
         MissionId = other.MissionId;
@@ -761,34 +932,30 @@ namespace ErrorhandlingService {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            RequestId = input.ReadInt64();
+          case 10: {
+            if (startTime_ == null) {
+              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(StartTime);
             break;
           }
           case 18: {
-            if (timestamp_ == null) {
-              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(Timestamp);
-            break;
-          }
-          case 26: {
             MissionId = input.ReadString();
             break;
           }
-          case 34: {
+          case 26: {
             TaskId = input.ReadString();
             break;
           }
-          case 42: {
+          case 34: {
             DeviceId = input.ReadString();
             break;
           }
-          case 48: {
+          case 40: {
             ErrorCode = input.ReadInt32();
             break;
           }
-          case 58: {
+          case 50: {
             WarningContent = input.ReadString();
             break;
           }
@@ -806,34 +973,30 @@ namespace ErrorhandlingService {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            RequestId = input.ReadInt64();
+          case 10: {
+            if (startTime_ == null) {
+              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(StartTime);
             break;
           }
           case 18: {
-            if (timestamp_ == null) {
-              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(Timestamp);
-            break;
-          }
-          case 26: {
             MissionId = input.ReadString();
             break;
           }
-          case 34: {
+          case 26: {
             TaskId = input.ReadString();
             break;
           }
-          case 42: {
+          case 34: {
             DeviceId = input.ReadString();
             break;
           }
-          case 48: {
+          case 40: {
             ErrorCode = input.ReadInt32();
             break;
           }
-          case 58: {
+          case 50: {
             WarningContent = input.ReadString();
             break;
           }

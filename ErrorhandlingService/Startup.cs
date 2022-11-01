@@ -37,8 +37,10 @@ namespace TS.Microservices.HealthChecksHost
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
+
             app.UseMetricServer();
-            app.UseHttpMetrics();
+            //app.UseHttpMetrics();
+            app.UseRequestMiddleware();
 
             app.UseEndpoints(endpoints =>
             {

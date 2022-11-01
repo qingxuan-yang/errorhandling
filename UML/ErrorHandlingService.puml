@@ -1,0 +1,11 @@
+package ErrorHandlingService{
+    class ErrorService{
+        + PostWarningReportRequest
+        + GetWarningReportRequest
+    }
+
+    class PrometheusService{}
+
+    class GrafanaService{}
+    Interface IErrorService{}
+}

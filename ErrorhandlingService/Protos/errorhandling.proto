@@ -6,12 +6,12 @@ package errorhandlingservice.protos;
 
 service WarningReport{
     rpc Get (GetWarningReportRequest) returns (GetWarningReportResponse);
-   // rpc Post (PostWarningReportRequest) returns (PostWarningReportResponse);
+    rpc Post (PostWarningReportRequest) returns (PostWarningReportResponse);
 }
 
 message GetWarningReportRequest{
     int64 request_id = 1;
-    google.protobuf.Timestamp timestamp = 2;
+    google.protobuf.Timestamp start_time = 2;
     string mission_id = 3;
     string task_id = 4;
     string device_id = 5;
@@ -21,10 +21,22 @@ message GetWarningReportRequest{
 
 message GetWarningReportResponse{
     int64 request_id = 1;
-    google.protobuf.Timestamp timestamp = 2;
-    string mission_id = 3;
-    string task_id = 4;
-    string device_id = 5;
-    int32 error_code = 6;
-    string warning_content = 7;
+    repeated WarningData warning_data = 2;
+}
+
+message PostWarningReportRequest{
+
+}
+
+message PostWarningReportResponse{
+    
+}
+
+message WarningData{
+    google.protobuf.Timestamp start_time = 1;
+    string mission_id = 2;
+    string task_id = 3;
+    string device_id = 4;
+    int32 error_code = 5;
+    string warning_content = 6;
 }

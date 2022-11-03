@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Protobuf Include="Protos\errorhandling.proto" GrpcServices="Server" />
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\greet.proto" GrpcServices="Both" />
   </ItemGroup>
 
   <ItemGroup>

@@ -6,14 +6,13 @@
 !include BackgroundService.puml
 
 DatatbaseHandler..|>IDatabaseHandler
-ErrorService..|>IErrorService
+WarningReport..|>IWarningReport
 
 
-IDatabaseHandler <-- ErrorService
-ErrorService <-- CallBackService
+IDatabaseHandler <-- WarningReport
 IDatabaseHandler <-- PrometheusService
 PrometheusService <-- GrafanaService
 
-ErrorService - DataModel
+WarningReport - DataModel
 
 @enduml

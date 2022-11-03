@@ -1,8 +1,8 @@
 ﻿using MongoDB.Driver;
 
-namespace ErrorhandlingService.DataBase
+namespace ErrorhandlingService.Interfaces
 {
-    public interface IDatsbaseHandler
+    public interface IDatsbaseController
     {
         IMongoDatabase GetDatabase();
         IMongoDatabase GetDatabase(string DatabaseName);

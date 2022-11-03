@@ -1,14 +1,15 @@
-﻿using Microsoft.Extensions.Options;
+﻿using ErrorhandlingService.Interfaces;
+using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace ErrorhandlingService.DataBase
+namespace ErrorhandlingService.Controllers
 {
-    public class DatabaseHandler: IDatsbaseHandler
+    public class DatabaseHandler : IDatsbaseController
     {
         private readonly MongoDBSetting _dbsetting;
         private readonly MongoClientBase _mongoclient;
 
-        public DatabaseHandler(IOptions<MongoDBSetting> dbSetting, MongoClientBase mongoClient) 
+        public DatabaseHandler(IOptions<MongoDBSetting> dbSetting, MongoClientBase mongoClient)
         {
             _dbsetting = dbSetting.Value;
             _mongoclient = mongoClient;

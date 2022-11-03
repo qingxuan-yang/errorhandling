@@ -1,4 +1,7 @@
 ﻿using ErrorhandlingService;
+using ErrorhandlingService.BackgroundServices;
+using ErrorhandlingService.Controllers;
+using ErrorhandlingService.Interfaces;
 using ErrorhandlingService.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -24,29 +27,42 @@ namespace TS.Microservices.HealthChecksHost
             services.AddGrpc();
             services.AddMvc();
             services.AddHealthChecks();
+            RegisterBackgroundService(services);
+            RegisterService(services);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        private static void RegisterBackgroundService(IServiceCollection services)
+        {
+            services.AddHostedService<BackgroundService>();
+        }
+
+        private static void RegisterService(IServiceCollection services)
+        {
+            services.AddSingleton<IWarningReport, WarningReportController>();
+        }
+
+
+            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
-
             app.UseMetricServer();
-            //app.UseHttpMetrics();
-            app.UseRequestMiddleware();
+            app.UseHttpMetrics();
+
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGrpcService<GreeterService>();
-                endpoints.MapGrpcService<WarningReportService>();
+                endpoints.MapGrpcService<ErrorService>();
                 endpoints.MapControllers();
+
             });
         }
     }

@@ -1,5 +1,5 @@
-package ErrorHandlingService{
-    class ErrorService{
+package WarningReportService{
+    class WarningReport{
         + PostWarningReportRequest
         + GetWarningReportRequest
     }
@@ -7,5 +7,5 @@ package ErrorHandlingService{
     class PrometheusService{}
 
     class GrafanaService{}
-    Interface IErrorService{}
+    Interface IWarningReport{}
 }

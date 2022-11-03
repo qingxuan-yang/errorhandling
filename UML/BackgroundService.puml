@@ -1,5 +1,6 @@
 package BackgroundService{
     class CallBackService{
-        + GetErrorList
+        + GetError
     }
+    class InitialBackgroundService{}
 }

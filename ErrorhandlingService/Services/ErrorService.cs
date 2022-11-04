@@ -1,5 +1,7 @@
 ﻿using ErrorhandlingService.Interfaces;
+using TacDynamics.ErrorHandlingService.Protos;
 using Grpc.Core;
+
 
 namespace ErrorhandlingService.Services
 {
@@ -17,7 +19,8 @@ namespace ErrorhandlingService.Services
 
         public override async Task<PostWarningReportResponse> Post(PostWarningReportRequest request, ServerCallContext context)
         {
-            return await _warningreporter.PostWarning(request); ;
+
+            return await _warningreporter.PostWarning(request);
         }
 
         public override async Task<GetWarningReportResponse> Get(GetWarningReportRequest request, ServerCallContext context)

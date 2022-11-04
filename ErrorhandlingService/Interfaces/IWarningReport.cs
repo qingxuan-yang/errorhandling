@@ -1,4 +1,6 @@
-﻿namespace ErrorhandlingService.Interfaces
+﻿using TacDynamics.ErrorHandlingService.Protos;
+
+namespace ErrorhandlingService.Interfaces
 {
     public interface IWarningReport
     {

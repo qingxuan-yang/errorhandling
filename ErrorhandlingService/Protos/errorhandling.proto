@@ -1,8 +1,8 @@
 syntax = "proto3";
 import "google/protobuf/timestamp.proto";
+package errorhandlingservice.protos; //will be placed in a namespace matching the package name if csharp_namespace is not specified
+option csharp_namespace = "TacDynamics.ErrorHandlingService.Protos"; 
 
-option csharp_namespace = "TacDynamics.ErrorHandlingService.Protos";
-package errorhandlingservice.protos;
 
 service WarningReport{
     rpc Get (GetWarningReportRequest) returns (GetWarningReportResponse);

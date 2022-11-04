@@ -1,4 +1,6 @@
 ﻿using ErrorhandlingService.Interfaces;
+using TacDynamics.ErrorHandlingService.Protos;
+
 namespace ErrorhandlingService.Controllers
 {
     public class WarningReportController: IWarningReport

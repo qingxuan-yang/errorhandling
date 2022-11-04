@@ -3,7 +3,7 @@ namespace ErrorhandlingService.Controllers
 {
     public class WarningReportController: IWarningReport
     {
-        IDatsbaseController _databasecontroller;
+        private readonly IDatsbaseController _databasecontroller;
         public WarningReportController(IDatsbaseController databasecontroller)
         {
             _databasecontroller = databasecontroller;

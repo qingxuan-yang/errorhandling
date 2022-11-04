@@ -1,4 +1,4 @@
-# SmartRC
+# Errorhandling Service
 
 ```plantuml
 

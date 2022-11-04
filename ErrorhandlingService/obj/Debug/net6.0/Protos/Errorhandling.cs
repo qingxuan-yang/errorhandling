@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace ErrorhandlingService {
+namespace TacDynamics.ErrorHandlingService.Protos {
 
   /// <summary>Holder for reflection information generated from Protos/errorhandling.proto</summary>
   public static partial class ErrorhandlingReflection {
@@ -24,40 +24,39 @@ namespace ErrorhandlingService {
     static ErrorhandlingReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpQcm90b3MvZXJyb3JoYW5kbGluZy5wcm90bxIpRXJyb3JoYW5kbGluZ1Nl",
-            "cnZpY2UuV2FybmluZ1JlcG9ydC5wcm90b3MaH2dvb2dsZS9wcm90b2J1Zi90",
-            "aW1lc3RhbXAucHJvdG8ifAoYUG9zdFdhcm5pbmdSZXBvcnRSZXF1ZXN0EhIK",
-            "CnJlcXVlc3RfaWQYASABKAMSTAoMd2FybmluZ19kYXRhGAIgAygLMjYuRXJy",
-            "b3JoYW5kbGluZ1NlcnZpY2UuV2FybmluZ1JlcG9ydC5wcm90b3MuV2Fybmlu",
-            "Z0RhdGEiUQoZUG9zdFdhcm5pbmdSZXBvcnRSZXNwb25zZRISCgpyZXF1ZXN0",
-            "X2lkGAEgASgDEg8KB3N1Y2Nlc3MYAiABKAgSDwoHbWVzc2FnZRgDIAEoCSK3",
-            "AQoXR2V0V2FybmluZ1JlcG9ydFJlcXVlc3QSEgoKcmVxdWVzdF9pZBgBIAEo",
-            "AxIuCgpzdGFydF90aW1lGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
-            "dGFtcBISCgptaXNzaW9uX2lkGAMgASgJEg8KB3Rhc2tfaWQYBCABKAkSEQoJ",
-            "ZGV2aWNlX2lkGAUgASgJEg8KB2Zpcm1faWQYBiABKAkSDwoHdmVyc2lvbhgH",
-            "IAEoCSJ8ChhHZXRXYXJuaW5nUmVwb3J0UmVzcG9uc2USEgoKcmVxdWVzdF9p",
-            "ZBgBIAEoAxJMCgx3YXJuaW5nX2RhdGEYAiADKAsyNi5FcnJvcmhhbmRsaW5n",
-            "U2VydmljZS5XYXJuaW5nUmVwb3J0LnByb3Rvcy5XYXJuaW5nRGF0YSK4AQoL",
-            "V2FybmluZ0RhdGESLgoKc3RhcnRfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASEgoKbWlzc2lvbl9pZBgCIAEoCRIPCgd0YXNrX2lk",
-            "GAMgASgJEhEKCWRldmljZV9pZBgEIAEoCRISCgplcnJvcl9jb2RlGAUgASgF",
-            "EhcKD3dhcm5pbmdfY29udGVudBgGIAEoCRIUCgxzZXJ2aWNlX25hbWUYByAB",
-            "KAkytAIKDVdhcm5pbmdSZXBvcnQSjgEKA0dldBJCLkVycm9yaGFuZGxpbmdT",
-            "ZXJ2aWNlLldhcm5pbmdSZXBvcnQucHJvdG9zLkdldFdhcm5pbmdSZXBvcnRS",
-            "ZXF1ZXN0GkMuRXJyb3JoYW5kbGluZ1NlcnZpY2UuV2FybmluZ1JlcG9ydC5w",
-            "cm90b3MuR2V0V2FybmluZ1JlcG9ydFJlc3BvbnNlEpEBCgRQb3N0EkMuRXJy",
-            "b3JoYW5kbGluZ1NlcnZpY2UuV2FybmluZ1JlcG9ydC5wcm90b3MuUG9zdFdh",
-            "cm5pbmdSZXBvcnRSZXF1ZXN0GkQuRXJyb3JoYW5kbGluZ1NlcnZpY2UuV2Fy",
-            "bmluZ1JlcG9ydC5wcm90b3MuUG9zdFdhcm5pbmdSZXBvcnRSZXNwb25zZUIX",
-            "qgIURXJyb3JoYW5kbGluZ1NlcnZpY2ViBnByb3RvMw=="));
+            "ChpQcm90b3MvZXJyb3JoYW5kbGluZy5wcm90bxIbZXJyb3JoYW5kbGluZ3Nl",
+            "cnZpY2UucHJvdG9zGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3Rv",
+            "IoQBChhQb3N0V2FybmluZ1JlcG9ydFJlcXVlc3QSEgoKcmVxdWVzdF9pZBgB",
+            "IAEoAxIUCgxzZXJ2aWNlX25hbWUYAiABKAkSPgoMd2FybmluZ19kYXRhGAMg",
+            "AygLMiguZXJyb3JoYW5kbGluZ3NlcnZpY2UucHJvdG9zLldhcm5pbmdEYXRh",
+            "IlEKGVBvc3RXYXJuaW5nUmVwb3J0UmVzcG9uc2USEgoKcmVxdWVzdF9pZBgB",
+            "IAEoAxIPCgdzdWNjZXNzGAIgASgIEg8KB21lc3NhZ2UYAyABKAkitwEKF0dl",
+            "dFdhcm5pbmdSZXBvcnRSZXF1ZXN0EhIKCnJlcXVlc3RfaWQYASABKAMSLgoK",
+            "c3RhcnRfdGltZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
+            "EgoKbWlzc2lvbl9pZBgDIAEoCRIPCgd0YXNrX2lkGAQgASgJEhEKCWRldmlj",
+            "ZV9pZBgFIAEoCRIPCgdmaXJtX2lkGAYgASgJEg8KB3ZlcnNpb24YByABKAki",
+            "bgoYR2V0V2FybmluZ1JlcG9ydFJlc3BvbnNlEhIKCnJlcXVlc3RfaWQYASAB",
+            "KAMSPgoMd2FybmluZ19kYXRhGAIgAygLMiguZXJyb3JoYW5kbGluZ3NlcnZp",
+            "Y2UucHJvdG9zLldhcm5pbmdEYXRhIrgBCgtXYXJuaW5nRGF0YRIuCgpzdGFy",
+            "dF90aW1lGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBISCgpt",
+            "aXNzaW9uX2lkGAIgASgJEg8KB3Rhc2tfaWQYAyABKAkSEQoJZGV2aWNlX2lk",
+            "GAQgASgJEhIKCmVycm9yX2NvZGUYBSABKAUSFwoPd2FybmluZ19jb250ZW50",
+            "GAYgASgJEhQKDHNlcnZpY2VfbmFtZRgHIAEoCTL6AQoNV2FybmluZ1JlcG9y",
+            "dBJyCgNHZXQSNC5lcnJvcmhhbmRsaW5nc2VydmljZS5wcm90b3MuR2V0V2Fy",
+            "bmluZ1JlcG9ydFJlcXVlc3QaNS5lcnJvcmhhbmRsaW5nc2VydmljZS5wcm90",
+            "b3MuR2V0V2FybmluZ1JlcG9ydFJlc3BvbnNlEnUKBFBvc3QSNS5lcnJvcmhh",
+            "bmRsaW5nc2VydmljZS5wcm90b3MuUG9zdFdhcm5pbmdSZXBvcnRSZXF1ZXN0",
+            "GjYuZXJyb3JoYW5kbGluZ3NlcnZpY2UucHJvdG9zLlBvc3RXYXJuaW5nUmVw",
+            "b3J0UmVzcG9uc2VCKqoCJ1RhY0R5bmFtaWNzLkVycm9ySGFuZGxpbmdTZXJ2",
+            "aWNlLlByb3Rvc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.PostWarningReportRequest), global::ErrorhandlingService.PostWarningReportRequest.Parser, new[]{ "RequestId", "WarningData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.PostWarningReportResponse), global::ErrorhandlingService.PostWarningReportResponse.Parser, new[]{ "RequestId", "Success", "Message" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.GetWarningReportRequest), global::ErrorhandlingService.GetWarningReportRequest.Parser, new[]{ "RequestId", "StartTime", "MissionId", "TaskId", "DeviceId", "FirmId", "Version" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.GetWarningReportResponse), global::ErrorhandlingService.GetWarningReportResponse.Parser, new[]{ "RequestId", "WarningData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.WarningData), global::ErrorhandlingService.WarningData.Parser, new[]{ "StartTime", "MissionId", "TaskId", "DeviceId", "ErrorCode", "WarningContent", "ServiceName" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest), global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest.Parser, new[]{ "RequestId", "ServiceName", "WarningData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse), global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse.Parser, new[]{ "RequestId", "Success", "Message" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest), global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest.Parser, new[]{ "RequestId", "StartTime", "MissionId", "TaskId", "DeviceId", "FirmId", "Version" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse), global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse.Parser, new[]{ "RequestId", "WarningData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.WarningData), global::TacDynamics.ErrorHandlingService.Protos.WarningData.Parser, new[]{ "StartTime", "MissionId", "TaskId", "DeviceId", "ErrorCode", "WarningContent", "ServiceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,7 +75,7 @@ namespace ErrorhandlingService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ErrorhandlingService.ErrorhandlingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::TacDynamics.ErrorHandlingService.Protos.ErrorhandlingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -94,6 +93,7 @@ namespace ErrorhandlingService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PostWarningReportRequest(PostWarningReportRequest other) : this() {
       requestId_ = other.requestId_;
+      serviceName_ = other.serviceName_;
       warningData_ = other.warningData_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -114,13 +114,24 @@ namespace ErrorhandlingService {
       }
     }
 
-    /// <summary>Field number for the "warning_data" field.</summary>
-    public const int WarningDataFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::ErrorhandlingService.WarningData> _repeated_warningData_codec
-        = pb::FieldCodec.ForMessage(18, global::ErrorhandlingService.WarningData.Parser);
-    private readonly pbc::RepeatedField<global::ErrorhandlingService.WarningData> warningData_ = new pbc::RepeatedField<global::ErrorhandlingService.WarningData>();
+    /// <summary>Field number for the "service_name" field.</summary>
+    public const int ServiceNameFieldNumber = 2;
+    private string serviceName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::ErrorhandlingService.WarningData> WarningData {
+    public string ServiceName {
+      get { return serviceName_; }
+      set {
+        serviceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "warning_data" field.</summary>
+    public const int WarningDataFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::TacDynamics.ErrorHandlingService.Protos.WarningData> _repeated_warningData_codec
+        = pb::FieldCodec.ForMessage(26, global::TacDynamics.ErrorHandlingService.Protos.WarningData.Parser);
+    private readonly pbc::RepeatedField<global::TacDynamics.ErrorHandlingService.Protos.WarningData> warningData_ = new pbc::RepeatedField<global::TacDynamics.ErrorHandlingService.Protos.WarningData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::TacDynamics.ErrorHandlingService.Protos.WarningData> WarningData {
       get { return warningData_; }
     }
 
@@ -138,6 +149,7 @@ namespace ErrorhandlingService {
         return true;
       }
       if (RequestId != other.RequestId) return false;
+      if (ServiceName != other.ServiceName) return false;
       if(!warningData_.Equals(other.warningData_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -146,6 +158,7 @@ namespace ErrorhandlingService {
     public override int GetHashCode() {
       int hash = 1;
       if (RequestId != 0L) hash ^= RequestId.GetHashCode();
+      if (ServiceName.Length != 0) hash ^= ServiceName.GetHashCode();
       hash ^= warningData_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -167,6 +180,10 @@ namespace ErrorhandlingService {
         output.WriteRawTag(8);
         output.WriteInt64(RequestId);
       }
+      if (ServiceName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ServiceName);
+      }
       warningData_.WriteTo(output, _repeated_warningData_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -181,6 +198,10 @@ namespace ErrorhandlingService {
         output.WriteRawTag(8);
         output.WriteInt64(RequestId);
       }
+      if (ServiceName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ServiceName);
+      }
       warningData_.WriteTo(ref output, _repeated_warningData_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -193,6 +214,9 @@ namespace ErrorhandlingService {
       int size = 0;
       if (RequestId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(RequestId);
+      }
+      if (ServiceName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServiceName);
       }
       size += warningData_.CalculateSize(_repeated_warningData_codec);
       if (_unknownFields != null) {
@@ -208,6 +232,9 @@ namespace ErrorhandlingService {
       }
       if (other.RequestId != 0L) {
         RequestId = other.RequestId;
+      }
+      if (other.ServiceName.Length != 0) {
+        ServiceName = other.ServiceName;
       }
       warningData_.Add(other.warningData_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -229,6 +256,10 @@ namespace ErrorhandlingService {
             break;
           }
           case 18: {
+            ServiceName = input.ReadString();
+            break;
+          }
+          case 26: {
             warningData_.AddEntriesFrom(input, _repeated_warningData_codec);
             break;
           }
@@ -251,6 +282,10 @@ namespace ErrorhandlingService {
             break;
           }
           case 18: {
+            ServiceName = input.ReadString();
+            break;
+          }
+          case 26: {
             warningData_.AddEntriesFrom(ref input, _repeated_warningData_codec);
             break;
           }
@@ -273,7 +308,7 @@ namespace ErrorhandlingService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ErrorhandlingService.ErrorhandlingReflection.Descriptor.MessageTypes[1]; }
+      get { return global::TacDynamics.ErrorHandlingService.Protos.ErrorhandlingReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -517,7 +552,7 @@ namespace ErrorhandlingService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ErrorhandlingService.ErrorhandlingReflection.Descriptor.MessageTypes[2]; }
+      get { return global::TacDynamics.ErrorHandlingService.Protos.ErrorhandlingReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -914,7 +949,7 @@ namespace ErrorhandlingService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ErrorhandlingService.ErrorhandlingReflection.Descriptor.MessageTypes[3]; }
+      get { return global::TacDynamics.ErrorHandlingService.Protos.ErrorhandlingReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -954,11 +989,11 @@ namespace ErrorhandlingService {
 
     /// <summary>Field number for the "warning_data" field.</summary>
     public const int WarningDataFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::ErrorhandlingService.WarningData> _repeated_warningData_codec
-        = pb::FieldCodec.ForMessage(18, global::ErrorhandlingService.WarningData.Parser);
-    private readonly pbc::RepeatedField<global::ErrorhandlingService.WarningData> warningData_ = new pbc::RepeatedField<global::ErrorhandlingService.WarningData>();
+    private static readonly pb::FieldCodec<global::TacDynamics.ErrorHandlingService.Protos.WarningData> _repeated_warningData_codec
+        = pb::FieldCodec.ForMessage(18, global::TacDynamics.ErrorHandlingService.Protos.WarningData.Parser);
+    private readonly pbc::RepeatedField<global::TacDynamics.ErrorHandlingService.Protos.WarningData> warningData_ = new pbc::RepeatedField<global::TacDynamics.ErrorHandlingService.Protos.WarningData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::ErrorhandlingService.WarningData> WarningData {
+    public pbc::RepeatedField<global::TacDynamics.ErrorHandlingService.Protos.WarningData> WarningData {
       get { return warningData_; }
     }
 
@@ -1111,7 +1146,7 @@ namespace ErrorhandlingService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ErrorhandlingService.ErrorhandlingReflection.Descriptor.MessageTypes[4]; }
+      get { return global::TacDynamics.ErrorHandlingService.Protos.ErrorhandlingReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

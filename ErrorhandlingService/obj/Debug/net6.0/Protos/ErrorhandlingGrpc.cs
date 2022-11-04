@@ -7,10 +7,10 @@
 
 using grpc = global::Grpc.Core;
 
-namespace ErrorhandlingService {
+namespace TacDynamics.ErrorHandlingService.Protos {
   public static partial class WarningReport
   {
-    static readonly string __ServiceName = "ErrorhandlingService.WarningReport.protos.WarningReport";
+    static readonly string __ServiceName = "errorhandlingservice.protos.WarningReport";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -46,34 +46,34 @@ namespace ErrorhandlingService {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ErrorhandlingService.GetWarningReportRequest> __Marshaller_ErrorhandlingService_WarningReport_protos_GetWarningReportRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ErrorhandlingService.GetWarningReportRequest.Parser));
+    static readonly grpc::Marshaller<global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest> __Marshaller_errorhandlingservice_protos_GetWarningReportRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ErrorhandlingService.GetWarningReportResponse> __Marshaller_ErrorhandlingService_WarningReport_protos_GetWarningReportResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ErrorhandlingService.GetWarningReportResponse.Parser));
+    static readonly grpc::Marshaller<global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse> __Marshaller_errorhandlingservice_protos_GetWarningReportResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ErrorhandlingService.PostWarningReportRequest> __Marshaller_ErrorhandlingService_WarningReport_protos_PostWarningReportRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ErrorhandlingService.PostWarningReportRequest.Parser));
+    static readonly grpc::Marshaller<global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest> __Marshaller_errorhandlingservice_protos_PostWarningReportRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ErrorhandlingService.PostWarningReportResponse> __Marshaller_ErrorhandlingService_WarningReport_protos_PostWarningReportResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ErrorhandlingService.PostWarningReportResponse.Parser));
+    static readonly grpc::Marshaller<global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse> __Marshaller_errorhandlingservice_protos_PostWarningReportResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ErrorhandlingService.GetWarningReportRequest, global::ErrorhandlingService.GetWarningReportResponse> __Method_Get = new grpc::Method<global::ErrorhandlingService.GetWarningReportRequest, global::ErrorhandlingService.GetWarningReportResponse>(
+    static readonly grpc::Method<global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest, global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse> __Method_Get = new grpc::Method<global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest, global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Get",
-        __Marshaller_ErrorhandlingService_WarningReport_protos_GetWarningReportRequest,
-        __Marshaller_ErrorhandlingService_WarningReport_protos_GetWarningReportResponse);
+        __Marshaller_errorhandlingservice_protos_GetWarningReportRequest,
+        __Marshaller_errorhandlingservice_protos_GetWarningReportResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ErrorhandlingService.PostWarningReportRequest, global::ErrorhandlingService.PostWarningReportResponse> __Method_Post = new grpc::Method<global::ErrorhandlingService.PostWarningReportRequest, global::ErrorhandlingService.PostWarningReportResponse>(
+    static readonly grpc::Method<global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest, global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse> __Method_Post = new grpc::Method<global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest, global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Post",
-        __Marshaller_ErrorhandlingService_WarningReport_protos_PostWarningReportRequest,
-        __Marshaller_ErrorhandlingService_WarningReport_protos_PostWarningReportResponse);
+        __Marshaller_errorhandlingservice_protos_PostWarningReportRequest,
+        __Marshaller_errorhandlingservice_protos_PostWarningReportResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::ErrorhandlingService.ErrorhandlingReflection.Descriptor.Services[0]; }
+      get { return global::TacDynamics.ErrorHandlingService.Protos.ErrorhandlingReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of WarningReport</summary>
@@ -81,13 +81,13 @@ namespace ErrorhandlingService {
     public abstract partial class WarningReportBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ErrorhandlingService.GetWarningReportResponse> Get(global::ErrorhandlingService.GetWarningReportRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse> Get(global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ErrorhandlingService.PostWarningReportResponse> Post(global::ErrorhandlingService.PostWarningReportRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse> Post(global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -111,8 +111,8 @@ namespace ErrorhandlingService {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, WarningReportBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Get, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ErrorhandlingService.GetWarningReportRequest, global::ErrorhandlingService.GetWarningReportResponse>(serviceImpl.Get));
-      serviceBinder.AddMethod(__Method_Post, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ErrorhandlingService.PostWarningReportRequest, global::ErrorhandlingService.PostWarningReportResponse>(serviceImpl.Post));
+      serviceBinder.AddMethod(__Method_Get, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest, global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse>(serviceImpl.Get));
+      serviceBinder.AddMethod(__Method_Post, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest, global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse>(serviceImpl.Post));
     }
 
   }

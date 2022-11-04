@@ -1,13 +1,7 @@
-﻿using ErrorhandlingService;
-using ErrorhandlingService.BackgroundServices;
-using ErrorhandlingService.Controllers;
+﻿using ErrorhandlingService.Controllers;
 using ErrorhandlingService.Interfaces;
 using ErrorhandlingService.Services;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using MongoDB.Driver;
 using Prometheus;
 
 namespace TS.Microservices.HealthChecksHost
@@ -27,6 +21,8 @@ namespace TS.Microservices.HealthChecksHost
             services.AddGrpc();
             services.AddMvc();
             services.AddHealthChecks();
+            services.Configure<MongoDBSetting>(Configuration.GetSection("ErrorhandlingService"));
+
             RegisterBackgroundService(services);
             RegisterService(services);
         }
@@ -39,6 +35,7 @@ namespace TS.Microservices.HealthChecksHost
         private static void RegisterService(IServiceCollection services)
         {
             services.AddSingleton<IWarningReport, WarningReportController>();
+            services.AddSingleton<MongoClientBase>(new MongoClient("mongodb://localhost:27017"));
         }
 
 

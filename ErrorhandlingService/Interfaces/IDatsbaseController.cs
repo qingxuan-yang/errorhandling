@@ -6,6 +6,7 @@ namespace ErrorhandlingService.Interfaces
     {
         IMongoDatabase GetDatabase();
         IMongoDatabase GetDatabase(string DatabaseName);
+
         IMongoCollection<CollectionType> GetDBCollection<CollectionType>(string CollectionName);
 
     }

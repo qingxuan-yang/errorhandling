@@ -11,7 +11,8 @@ service WarningReport{
 
 message PostWarningReportRequest{
     int64 request_id = 1;
-    repeated WarningData warning_data = 2;
+    string service_name = 2;
+    repeated WarningData warning_data = 3;
 }
 
 message PostWarningReportResponse{
@@ -42,4 +43,5 @@ message WarningData{
     string device_id = 4;
     int32 error_code = 5;
     string warning_content = 6;
+    string service_name = 7;
 }

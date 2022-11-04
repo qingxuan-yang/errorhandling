@@ -37,19 +37,19 @@ namespace ErrorhandlingService {
             "ZGV2aWNlX2lkGAUgASgJEg8KB2Zpcm1faWQYBiABKAkSDwoHdmVyc2lvbhgH",
             "IAEoCSJ8ChhHZXRXYXJuaW5nUmVwb3J0UmVzcG9uc2USEgoKcmVxdWVzdF9p",
             "ZBgBIAEoAxJMCgx3YXJuaW5nX2RhdGEYAiADKAsyNi5FcnJvcmhhbmRsaW5n",
-            "U2VydmljZS5XYXJuaW5nUmVwb3J0LnByb3Rvcy5XYXJuaW5nRGF0YSKiAQoL",
+            "U2VydmljZS5XYXJuaW5nUmVwb3J0LnByb3Rvcy5XYXJuaW5nRGF0YSK4AQoL",
             "V2FybmluZ0RhdGESLgoKc3RhcnRfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90",
             "b2J1Zi5UaW1lc3RhbXASEgoKbWlzc2lvbl9pZBgCIAEoCRIPCgd0YXNrX2lk",
             "GAMgASgJEhEKCWRldmljZV9pZBgEIAEoCRISCgplcnJvcl9jb2RlGAUgASgF",
-            "EhcKD3dhcm5pbmdfY29udGVudBgGIAEoCTK0AgoNV2FybmluZ1JlcG9ydBKO",
-            "AQoDR2V0EkIuRXJyb3JoYW5kbGluZ1NlcnZpY2UuV2FybmluZ1JlcG9ydC5w",
-            "cm90b3MuR2V0V2FybmluZ1JlcG9ydFJlcXVlc3QaQy5FcnJvcmhhbmRsaW5n",
-            "U2VydmljZS5XYXJuaW5nUmVwb3J0LnByb3Rvcy5HZXRXYXJuaW5nUmVwb3J0",
-            "UmVzcG9uc2USkQEKBFBvc3QSQy5FcnJvcmhhbmRsaW5nU2VydmljZS5XYXJu",
-            "aW5nUmVwb3J0LnByb3Rvcy5Qb3N0V2FybmluZ1JlcG9ydFJlcXVlc3QaRC5F",
-            "cnJvcmhhbmRsaW5nU2VydmljZS5XYXJuaW5nUmVwb3J0LnByb3Rvcy5Qb3N0",
-            "V2FybmluZ1JlcG9ydFJlc3BvbnNlQheqAhRFcnJvcmhhbmRsaW5nU2Vydmlj",
-            "ZWIGcHJvdG8z"));
+            "EhcKD3dhcm5pbmdfY29udGVudBgGIAEoCRIUCgxzZXJ2aWNlX25hbWUYByAB",
+            "KAkytAIKDVdhcm5pbmdSZXBvcnQSjgEKA0dldBJCLkVycm9yaGFuZGxpbmdT",
+            "ZXJ2aWNlLldhcm5pbmdSZXBvcnQucHJvdG9zLkdldFdhcm5pbmdSZXBvcnRS",
+            "ZXF1ZXN0GkMuRXJyb3JoYW5kbGluZ1NlcnZpY2UuV2FybmluZ1JlcG9ydC5w",
+            "cm90b3MuR2V0V2FybmluZ1JlcG9ydFJlc3BvbnNlEpEBCgRQb3N0EkMuRXJy",
+            "b3JoYW5kbGluZ1NlcnZpY2UuV2FybmluZ1JlcG9ydC5wcm90b3MuUG9zdFdh",
+            "cm5pbmdSZXBvcnRSZXF1ZXN0GkQuRXJyb3JoYW5kbGluZ1NlcnZpY2UuV2Fy",
+            "bmluZ1JlcG9ydC5wcm90b3MuUG9zdFdhcm5pbmdSZXBvcnRSZXNwb25zZUIX",
+            "qgIURXJyb3JoYW5kbGluZ1NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,7 +57,7 @@ namespace ErrorhandlingService {
             new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.PostWarningReportResponse), global::ErrorhandlingService.PostWarningReportResponse.Parser, new[]{ "RequestId", "Success", "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.GetWarningReportRequest), global::ErrorhandlingService.GetWarningReportRequest.Parser, new[]{ "RequestId", "StartTime", "MissionId", "TaskId", "DeviceId", "FirmId", "Version" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.GetWarningReportResponse), global::ErrorhandlingService.GetWarningReportResponse.Parser, new[]{ "RequestId", "WarningData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.WarningData), global::ErrorhandlingService.WarningData.Parser, new[]{ "StartTime", "MissionId", "TaskId", "DeviceId", "ErrorCode", "WarningContent" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ErrorhandlingService.WarningData), global::ErrorhandlingService.WarningData.Parser, new[]{ "StartTime", "MissionId", "TaskId", "DeviceId", "ErrorCode", "WarningContent", "ServiceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1134,6 +1134,7 @@ namespace ErrorhandlingService {
       deviceId_ = other.deviceId_;
       errorCode_ = other.errorCode_;
       warningContent_ = other.warningContent_;
+      serviceName_ = other.serviceName_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1208,6 +1209,17 @@ namespace ErrorhandlingService {
       }
     }
 
+    /// <summary>Field number for the "service_name" field.</summary>
+    public const int ServiceNameFieldNumber = 7;
+    private string serviceName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ServiceName {
+      get { return serviceName_; }
+      set {
+        serviceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as WarningData);
@@ -1227,6 +1239,7 @@ namespace ErrorhandlingService {
       if (DeviceId != other.DeviceId) return false;
       if (ErrorCode != other.ErrorCode) return false;
       if (WarningContent != other.WarningContent) return false;
+      if (ServiceName != other.ServiceName) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1239,6 +1252,7 @@ namespace ErrorhandlingService {
       if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
       if (ErrorCode != 0) hash ^= ErrorCode.GetHashCode();
       if (WarningContent.Length != 0) hash ^= WarningContent.GetHashCode();
+      if (ServiceName.Length != 0) hash ^= ServiceName.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1279,6 +1293,10 @@ namespace ErrorhandlingService {
         output.WriteRawTag(50);
         output.WriteString(WarningContent);
       }
+      if (ServiceName.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(ServiceName);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1312,6 +1330,10 @@ namespace ErrorhandlingService {
         output.WriteRawTag(50);
         output.WriteString(WarningContent);
       }
+      if (ServiceName.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(ServiceName);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1338,6 +1360,9 @@ namespace ErrorhandlingService {
       }
       if (WarningContent.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(WarningContent);
+      }
+      if (ServiceName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServiceName);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1370,6 +1395,9 @@ namespace ErrorhandlingService {
       }
       if (other.WarningContent.Length != 0) {
         WarningContent = other.WarningContent;
+      }
+      if (other.ServiceName.Length != 0) {
+        ServiceName = other.ServiceName;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1412,6 +1440,10 @@ namespace ErrorhandlingService {
             WarningContent = input.ReadString();
             break;
           }
+          case 58: {
+            ServiceName = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1451,6 +1483,10 @@ namespace ErrorhandlingService {
           }
           case 50: {
             WarningContent = input.ReadString();
+            break;
+          }
+          case 58: {
+            ServiceName = input.ReadString();
             break;
           }
         }

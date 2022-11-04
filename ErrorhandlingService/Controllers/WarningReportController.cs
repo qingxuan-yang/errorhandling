@@ -3,8 +3,17 @@ namespace ErrorhandlingService.Controllers
 {
     public class WarningReportController: IWarningReport
     {
+        IDatsbaseController _databasecontroller;
+        public WarningReportController(IDatsbaseController databasecontroller)
+        {
+            _databasecontroller = databasecontroller;
+        }
+
+
         public async Task<PostWarningReportResponse> PostWarning(PostWarningReportRequest data)
         {
+            Console.WriteLine(data);
+
             var response = new PostWarningReportResponse()
             {
                 RequestId = 114522,

@@ -2,7 +2,7 @@
 
 namespace ErrorhandlingService.BackgroundServices
 {
-    public class CallbackService: BackgroundService
+    public class CallbackService : BackgroundService
     {
         private ILogger<CallbackService> _logger;
 

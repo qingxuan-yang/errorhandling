@@ -4,12 +4,12 @@ using MongoDB.Driver;
 
 namespace ErrorhandlingService.Controllers
 {
-    public class DatabaseHandler : IDatsbaseController
+    public class DatabaseController : IDatabaseController
     {
-        private readonly MongoDBSetting _dbsetting;
+        private readonly MongodbSetting _dbsetting;
         private readonly MongoClientBase _mongoclient;
 
-        public DatabaseHandler(IOptions<MongoDBSetting> dbSetting, MongoClientBase mongoClient)
+        public DatabaseController(IOptions<MongodbSetting> dbSetting, MongoClientBase mongoClient)
         {
             _dbsetting = dbSetting.Value;
             _mongoclient = mongoClient;

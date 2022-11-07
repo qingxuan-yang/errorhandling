@@ -30,33 +30,34 @@ namespace TacDynamics.ErrorHandlingService.Protos {
             "IAEoAxIUCgxzZXJ2aWNlX25hbWUYAiABKAkSPgoMd2FybmluZ19kYXRhGAMg",
             "AygLMiguZXJyb3JoYW5kbGluZ3NlcnZpY2UucHJvdG9zLldhcm5pbmdEYXRh",
             "IlEKGVBvc3RXYXJuaW5nUmVwb3J0UmVzcG9uc2USEgoKcmVxdWVzdF9pZBgB",
-            "IAEoAxIPCgdzdWNjZXNzGAIgASgIEg8KB21lc3NhZ2UYAyABKAkitwEKF0dl",
+            "IAEoAxIPCgdzdWNjZXNzGAIgASgIEg8KB21lc3NhZ2UYAyABKAkixQEKF0dl",
             "dFdhcm5pbmdSZXBvcnRSZXF1ZXN0EhIKCnJlcXVlc3RfaWQYASABKAMSLgoK",
             "c3RhcnRfdGltZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
             "EgoKbWlzc2lvbl9pZBgDIAEoCRIPCgd0YXNrX2lkGAQgASgJEhEKCWRldmlj",
-            "ZV9pZBgFIAEoCRIPCgdmaXJtX2lkGAYgASgJEg8KB3ZlcnNpb24YByABKAki",
-            "bgoYR2V0V2FybmluZ1JlcG9ydFJlc3BvbnNlEhIKCnJlcXVlc3RfaWQYASAB",
-            "KAMSPgoMd2FybmluZ19kYXRhGAIgAygLMiguZXJyb3JoYW5kbGluZ3NlcnZp",
-            "Y2UucHJvdG9zLldhcm5pbmdEYXRhIrgBCgtXYXJuaW5nRGF0YRIuCgpzdGFy",
-            "dF90aW1lGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBISCgpt",
-            "aXNzaW9uX2lkGAIgASgJEg8KB3Rhc2tfaWQYAyABKAkSEQoJZGV2aWNlX2lk",
-            "GAQgASgJEhIKCmVycm9yX2NvZGUYBSABKAUSFwoPd2FybmluZ19jb250ZW50",
-            "GAYgASgJEhQKDHNlcnZpY2VfbmFtZRgHIAEoCTL6AQoNV2FybmluZ1JlcG9y",
-            "dBJyCgNHZXQSNC5lcnJvcmhhbmRsaW5nc2VydmljZS5wcm90b3MuR2V0V2Fy",
-            "bmluZ1JlcG9ydFJlcXVlc3QaNS5lcnJvcmhhbmRsaW5nc2VydmljZS5wcm90",
-            "b3MuR2V0V2FybmluZ1JlcG9ydFJlc3BvbnNlEnUKBFBvc3QSNS5lcnJvcmhh",
-            "bmRsaW5nc2VydmljZS5wcm90b3MuUG9zdFdhcm5pbmdSZXBvcnRSZXF1ZXN0",
-            "GjYuZXJyb3JoYW5kbGluZ3NlcnZpY2UucHJvdG9zLlBvc3RXYXJuaW5nUmVw",
-            "b3J0UmVzcG9uc2VCKqoCJ1RhY0R5bmFtaWNzLkVycm9ySGFuZGxpbmdTZXJ2",
-            "aWNlLlByb3Rvc2IGcHJvdG8z"));
+            "ZV9pZBgFIAEoCRIuCgplcnJvcl90aW1lGAYgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcCJuChhHZXRXYXJuaW5nUmVwb3J0UmVzcG9uc2USEgoK",
+            "cmVxdWVzdF9pZBgBIAEoAxI+Cgx3YXJuaW5nX2RhdGEYAiADKAsyKC5lcnJv",
+            "cmhhbmRsaW5nc2VydmljZS5wcm90b3MuV2FybmluZ0RhdGEi0gEKC1dhcm5p",
+            "bmdEYXRhEi4KCnN0YXJ0X3RpbWUYASABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wEhIKCm1pc3Npb25faWQYAiABKAkSDwoHdGFza19pZBgDIAEo",
+            "CRIRCglkZXZpY2VfaWQYBCABKAkSEgoKZXJyb3JfY29kZRgFIAEoBRIXCg93",
+            "YXJuaW5nX2NvbnRlbnQYBiABKAkSLgoKZXJyb3JfdGltZRgHIAEoCzIaLmdv",
+            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAy+gEKDVdhcm5pbmdSZXBvcnQScgoD",
+            "R2V0EjQuZXJyb3JoYW5kbGluZ3NlcnZpY2UucHJvdG9zLkdldFdhcm5pbmdS",
+            "ZXBvcnRSZXF1ZXN0GjUuZXJyb3JoYW5kbGluZ3NlcnZpY2UucHJvdG9zLkdl",
+            "dFdhcm5pbmdSZXBvcnRSZXNwb25zZRJ1CgRQb3N0EjUuZXJyb3JoYW5kbGlu",
+            "Z3NlcnZpY2UucHJvdG9zLlBvc3RXYXJuaW5nUmVwb3J0UmVxdWVzdBo2LmVy",
+            "cm9yaGFuZGxpbmdzZXJ2aWNlLnByb3Rvcy5Qb3N0V2FybmluZ1JlcG9ydFJl",
+            "c3BvbnNlQiqqAidUYWNEeW5hbWljcy5FcnJvckhhbmRsaW5nU2VydmljZS5Q",
+            "cm90b3NiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest), global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportRequest.Parser, new[]{ "RequestId", "ServiceName", "WarningData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse), global::TacDynamics.ErrorHandlingService.Protos.PostWarningReportResponse.Parser, new[]{ "RequestId", "Success", "Message" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest), global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest.Parser, new[]{ "RequestId", "StartTime", "MissionId", "TaskId", "DeviceId", "FirmId", "Version" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest), global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportRequest.Parser, new[]{ "RequestId", "StartTime", "MissionId", "TaskId", "DeviceId", "ErrorTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse), global::TacDynamics.ErrorHandlingService.Protos.GetWarningReportResponse.Parser, new[]{ "RequestId", "WarningData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.WarningData), global::TacDynamics.ErrorHandlingService.Protos.WarningData.Parser, new[]{ "StartTime", "MissionId", "TaskId", "DeviceId", "ErrorCode", "WarningContent", "ServiceName" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::TacDynamics.ErrorHandlingService.Protos.WarningData), global::TacDynamics.ErrorHandlingService.Protos.WarningData.Parser, new[]{ "StartTime", "MissionId", "TaskId", "DeviceId", "ErrorCode", "WarningContent", "ErrorTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -574,8 +575,7 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       missionId_ = other.missionId_;
       taskId_ = other.taskId_;
       deviceId_ = other.deviceId_;
-      firmId_ = other.firmId_;
-      version_ = other.version_;
+      errorTime_ = other.errorTime_ != null ? other.errorTime_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -598,6 +598,9 @@ namespace TacDynamics.ErrorHandlingService.Protos {
     /// <summary>Field number for the "start_time" field.</summary>
     public const int StartTimeFieldNumber = 2;
     private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
+    /// <summary>
+    /// request time
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
       get { return startTime_; }
@@ -639,25 +642,14 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       }
     }
 
-    /// <summary>Field number for the "firm_id" field.</summary>
-    public const int FirmIdFieldNumber = 6;
-    private string firmId_ = "";
+    /// <summary>Field number for the "error_time" field.</summary>
+    public const int ErrorTimeFieldNumber = 6;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp errorTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string FirmId {
-      get { return firmId_; }
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ErrorTime {
+      get { return errorTime_; }
       set {
-        firmId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 7;
-    private string version_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Version {
-      get { return version_; }
-      set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        errorTime_ = value;
       }
     }
 
@@ -679,8 +671,7 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       if (MissionId != other.MissionId) return false;
       if (TaskId != other.TaskId) return false;
       if (DeviceId != other.DeviceId) return false;
-      if (FirmId != other.FirmId) return false;
-      if (Version != other.Version) return false;
+      if (!object.Equals(ErrorTime, other.ErrorTime)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -692,8 +683,7 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       if (MissionId.Length != 0) hash ^= MissionId.GetHashCode();
       if (TaskId.Length != 0) hash ^= TaskId.GetHashCode();
       if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
-      if (FirmId.Length != 0) hash ^= FirmId.GetHashCode();
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
+      if (errorTime_ != null) hash ^= ErrorTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -730,13 +720,9 @@ namespace TacDynamics.ErrorHandlingService.Protos {
         output.WriteRawTag(42);
         output.WriteString(DeviceId);
       }
-      if (FirmId.Length != 0) {
+      if (errorTime_ != null) {
         output.WriteRawTag(50);
-        output.WriteString(FirmId);
-      }
-      if (Version.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Version);
+        output.WriteMessage(ErrorTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -767,13 +753,9 @@ namespace TacDynamics.ErrorHandlingService.Protos {
         output.WriteRawTag(42);
         output.WriteString(DeviceId);
       }
-      if (FirmId.Length != 0) {
+      if (errorTime_ != null) {
         output.WriteRawTag(50);
-        output.WriteString(FirmId);
-      }
-      if (Version.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Version);
+        output.WriteMessage(ErrorTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -799,11 +781,8 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       if (DeviceId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(DeviceId);
       }
-      if (FirmId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(FirmId);
-      }
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Version);
+      if (errorTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ErrorTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -834,11 +813,11 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       if (other.DeviceId.Length != 0) {
         DeviceId = other.DeviceId;
       }
-      if (other.FirmId.Length != 0) {
-        FirmId = other.FirmId;
-      }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
+      if (other.errorTime_ != null) {
+        if (errorTime_ == null) {
+          ErrorTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ErrorTime.MergeFrom(other.ErrorTime);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -878,11 +857,10 @@ namespace TacDynamics.ErrorHandlingService.Protos {
             break;
           }
           case 50: {
-            FirmId = input.ReadString();
-            break;
-          }
-          case 58: {
-            Version = input.ReadString();
+            if (errorTime_ == null) {
+              ErrorTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ErrorTime);
             break;
           }
         }
@@ -923,11 +901,10 @@ namespace TacDynamics.ErrorHandlingService.Protos {
             break;
           }
           case 50: {
-            FirmId = input.ReadString();
-            break;
-          }
-          case 58: {
-            Version = input.ReadString();
+            if (errorTime_ == null) {
+              ErrorTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ErrorTime);
             break;
           }
         }
@@ -1169,7 +1146,7 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       deviceId_ = other.deviceId_;
       errorCode_ = other.errorCode_;
       warningContent_ = other.warningContent_;
-      serviceName_ = other.serviceName_;
+      errorTime_ = other.errorTime_ != null ? other.errorTime_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1181,6 +1158,9 @@ namespace TacDynamics.ErrorHandlingService.Protos {
     /// <summary>Field number for the "start_time" field.</summary>
     public const int StartTimeFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
+    /// <summary>
+    /// request time
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
       get { return startTime_; }
@@ -1244,14 +1224,14 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       }
     }
 
-    /// <summary>Field number for the "service_name" field.</summary>
-    public const int ServiceNameFieldNumber = 7;
-    private string serviceName_ = "";
+    /// <summary>Field number for the "error_time" field.</summary>
+    public const int ErrorTimeFieldNumber = 7;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp errorTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ServiceName {
-      get { return serviceName_; }
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ErrorTime {
+      get { return errorTime_; }
       set {
-        serviceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        errorTime_ = value;
       }
     }
 
@@ -1274,7 +1254,7 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       if (DeviceId != other.DeviceId) return false;
       if (ErrorCode != other.ErrorCode) return false;
       if (WarningContent != other.WarningContent) return false;
-      if (ServiceName != other.ServiceName) return false;
+      if (!object.Equals(ErrorTime, other.ErrorTime)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1287,7 +1267,7 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
       if (ErrorCode != 0) hash ^= ErrorCode.GetHashCode();
       if (WarningContent.Length != 0) hash ^= WarningContent.GetHashCode();
-      if (ServiceName.Length != 0) hash ^= ServiceName.GetHashCode();
+      if (errorTime_ != null) hash ^= ErrorTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1328,9 +1308,9 @@ namespace TacDynamics.ErrorHandlingService.Protos {
         output.WriteRawTag(50);
         output.WriteString(WarningContent);
       }
-      if (ServiceName.Length != 0) {
+      if (errorTime_ != null) {
         output.WriteRawTag(58);
-        output.WriteString(ServiceName);
+        output.WriteMessage(ErrorTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1365,9 +1345,9 @@ namespace TacDynamics.ErrorHandlingService.Protos {
         output.WriteRawTag(50);
         output.WriteString(WarningContent);
       }
-      if (ServiceName.Length != 0) {
+      if (errorTime_ != null) {
         output.WriteRawTag(58);
-        output.WriteString(ServiceName);
+        output.WriteMessage(ErrorTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1396,8 +1376,8 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       if (WarningContent.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(WarningContent);
       }
-      if (ServiceName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServiceName);
+      if (errorTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ErrorTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1431,8 +1411,11 @@ namespace TacDynamics.ErrorHandlingService.Protos {
       if (other.WarningContent.Length != 0) {
         WarningContent = other.WarningContent;
       }
-      if (other.ServiceName.Length != 0) {
-        ServiceName = other.ServiceName;
+      if (other.errorTime_ != null) {
+        if (errorTime_ == null) {
+          ErrorTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ErrorTime.MergeFrom(other.ErrorTime);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1476,7 +1459,10 @@ namespace TacDynamics.ErrorHandlingService.Protos {
             break;
           }
           case 58: {
-            ServiceName = input.ReadString();
+            if (errorTime_ == null) {
+              ErrorTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ErrorTime);
             break;
           }
         }
@@ -1521,7 +1507,10 @@ namespace TacDynamics.ErrorHandlingService.Protos {
             break;
           }
           case 58: {
-            ServiceName = input.ReadString();
+            if (errorTime_ == null) {
+              ErrorTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ErrorTime);
             break;
           }
         }

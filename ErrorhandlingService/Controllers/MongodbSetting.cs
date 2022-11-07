@@ -1,6 +1,6 @@
 namespace ErrorhandlingService.Controllers
 {
-    public class MongoDBSetting
+    public class MongodbSetting
     {
         public string ConnectionString { get; set; } = null!;
 

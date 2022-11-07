@@ -1,4 +1,5 @@
-﻿using ErrorhandlingService.Controllers;
+﻿using ErrorhandlingService.BackgroundServices;
+using ErrorhandlingService.Controllers;
 using ErrorhandlingService.Interfaces;
 using ErrorhandlingService.Services;
 using MongoDB.Driver;
@@ -21,7 +22,7 @@ namespace TS.Microservices.HealthChecksHost
             services.AddGrpc();
             services.AddMvc();
             services.AddHealthChecks();
-            services.Configure<MongoDBSetting>(Configuration.GetSection("ErrorhandlingService"));
+            services.Configure<MongodbSetting>(Configuration.GetSection("ErrorhandlingService"));
 
             RegisterBackgroundService(services);
             RegisterService(services);
@@ -29,12 +30,13 @@ namespace TS.Microservices.HealthChecksHost
 
         private static void RegisterBackgroundService(IServiceCollection services)
         {
-            services.AddHostedService<BackgroundService>();
+            services.AddHostedService<CallbackService>();
         }
 
         private static void RegisterService(IServiceCollection services)
         {
             services.AddSingleton<IWarningReport, WarningReportController>();
+            services.AddSingleton<IDatabaseController, DatabaseController>();
             services.AddSingleton<MongoClientBase>(new MongoClient("mongodb://localhost:27017"));
         }
 

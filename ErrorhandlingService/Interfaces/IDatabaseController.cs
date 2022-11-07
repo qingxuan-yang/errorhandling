@@ -2,7 +2,7 @@
 
 namespace ErrorhandlingService.Interfaces
 {
-    public interface IDatsbaseController
+    public interface IDatabaseController
     {
         IMongoDatabase GetDatabase();
         IMongoDatabase GetDatabase(string DatabaseName);
